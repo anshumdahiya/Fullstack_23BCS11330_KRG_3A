@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Product Filter</title>
+
+  <script src="index.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    select {
+      padding: 5px 10px;
+      margin: 0 10px 20px 0;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px 0;
+      width: 200px;
+      background: #f9f9f9;
+    }
+
+    .product h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .product p {
+      margin: 5px 0 0;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Dynamic Product Filter</h2>
+  <div class="drop-down">
+    <label for="filter">Category:</label>
+    <select id="filter">
+      <option value="all">All Products</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+    </select>
+
+    <label for="sort">Sort by Price:</label>
+    <select id="sort">
+      <option value="default">Default</option>
+      <option value="low-high">Assending</option>
+      <option value="high-low">Decending</option>
+    </select>
+  </div>
+
+  <div id="products-container"></div>
+
+</body>
+
+</html>
